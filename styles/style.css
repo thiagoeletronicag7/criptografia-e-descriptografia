@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --cinza-400: #495057;
+    --cinza-500: #343A40;
+    --dark-blue-300: #0A3871;
+    --background-pagina: #F3F5FC;
+    --branco: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: var(--background-pagina);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* Para posicionamento absoluto da logomarca */
+}
+
+h3 {
+    color: var(--cinza-500);
+}
+
+h4 {
+    color: var(--cinza-400);
+    font-size: 12px;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    margin-top: 100px;
+    background-color: var(--background-pagina);
+    border: none;
+    padding: 10px;
+    resize: none;
+    font-size: 32px;
+    font-family: "Inter", sans-serif;
+    color: var(--dark-blue-300);
+}
+
+textarea::placeholder {
+    color: var(--dark-blue-300);
+    /* Cor do texto do placeholder */
+    font-size: 32px;
+    /* Tamanho da fonte do placeholder */
+}
+
+main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    /* Opcional: limite máximo de largura para o conteúdo */
+}
+
+.lado-esquerdo,
+.lado-direito {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.lado-esquerdo {
+    flex: 1;
+    padding: 20px;
+    position: relative;
+    /* Para posicionamento absoluto da logomarca */
+}
+
+.conteudo-lado-esquerdo {
+    width: 100%;
+    max-width: 500px;
+    /* Opcional: limite máximo de largura para a área de texto */
+}
+
+.botoes {
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    /* Centraliza os botões horizontalmente */
+    width: 100%;
+    max-width: 500px;
+    /* Opcional: limite máximo de largura para os botões */
+    gap: 10px;
+    /* Espaçamento entre os botões */
+    padding: 50px 0 50px 0;
+}
+
+.botoes button#btn-criptografar,
+.botoes button#btn-descriptografar {
+    flex: 1;
+    margin: 0 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid var(--cinza-500);
+    border-radius: 18px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.botoes button#btn-criptografar {
+    background-color: var(--dark-blue-300);
+    color: var(--branco);
+}
+
+.botoes button#btn-criptografar:hover {
+    background-color: var(--background-pagina);
+    color: var(--dark-blue-300);
+    border: 2px solid var(--dark-blue-300);
+}
+
+.botoes button#btn-descriptografar {
+    color: var(--dark-blue-300);
+    border: 2px solid var(--dark-blue-300);
+}
+
+.botoes button#btn-descriptografar:hover {
+    background-color: var(--dark-blue-300);
+    color: var(--branco);
+}
+
+.orientacao-letras-minusculas {
+    display: flex;
+    align-items: center;
+    /* Alinha verticalmente os itens no centro */
+    margin-top: 200px;
+    /* Adicione margem se necessário */
+}
+
+.orientacao-letras-minusculas img.icone-exclamacao {
+    margin-right: 8px;
+    /* Espaçamento entre o ícone e o texto */
+}
+
+
+.lado-direito {
+    flex: 1;
+    background-color: var(--branco);
+    padding: 20px;
+    text-align: center;
+    max-width: 30%;
+    /* Ajuste para 20% ou 30% do tamanho total */
+    margin-right: 20px;
+    /* Cria a margem entre os painéis */
+}
+
+.lado-direito img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Adiciona a logomarca no canto superior esquerdo */
+.lado-esquerdo a img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.titulo-resultado {
+    font-family: "Inter", sans-serif;
+    color: var(--dark-blue-300);
+    font-size: 32px;
+}
+
+.resultado-texto {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    color: var(--cinza-500);
+    margin-top: 20px;
+}
+
+#btn-copiar {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: var(--branco);
+    background-color: var(--dark-blue-300);
+    border: 2px solid var(--dark-blue-300);
+    border-radius: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn-copiar:hover {
+    background-color: var(--white);
+    color: var(--dark-blue-300);
+    border: 2px solid var(--dark-blue-300);
+}
